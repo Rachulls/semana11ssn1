@@ -1,0 +1,21 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    margin: 20px;
+    background-color: aliceblue;
+}
+
+div{
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+}
+
+

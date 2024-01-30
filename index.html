@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Eventos</title>
+</head>
+
+<body>
+    <h1>EVENTOS EN JAVASCRIPT</h1>
+    <article>
+        <h2>Evento</h2>
+        <p>Un evento es una acción o ocurrencia que sucede en el navegador y que puede ser detectada y manejada por el
+            código JavaScript. </p>
+    </article>
+    <article>
+        <h2>getElementById</h2>
+        <p>Es un método que se utiliza para obtener una referencia a un elemento HTML en el documento
+            basándose en su atributo id.</p>
+        <div>
+            <p>let miElemento = document.getElementById('miElemento');</p>
+            <p>miElemento.innerHTML = '¡Hola, mundo!';</p>
+        </div>
+    </article>
+    <article>
+        <h2>addEventListener</h2>
+        <p>se utiliza para adjuntar un manejador de eventos a un elemento HTML. Permite que se ejecute una función (o "manejador de eventos") cuando ocurre un evento específico en ese elemento.</p>
+        <div>
+            <p>let miBoton = document.getElementById('miBoton');</p>
+            <p>miBoton.addEventListener('click', function()</p>
+        </div>
+    </article>
+    <article>
+        <h2>EVENT BUBBLING</h2>
+        <p>Es un concepto en JavaScript relacionado con la propagación de eventos a través de la jerarquía de elementos del DOM. Cuando ocurre un evento en un elemento específico, el evento se propaga desde ese elemento hacia arriba a través de sus ancestros en la jerarquía del DOM.</p>
+        <div id="contenedor">
+            <button id="boton">Haz clic</button>
+          </div>
+    </article>
+    <article>
+        <h2>DELEGACIÓN</h2>
+        <p>Aprovecha el concepto de event bubbling para gestionar eventos eficientemente. En lugar de agregar manejadores de eventos directamente a los elementos individuales, puedes asignar un único manejador de eventos a un ancestro común de los elementos y luego determinar el objetivo real del evento dentro de ese manejador.</p>
+        <div>
+            <ul id="miLista">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+              </ul>
+        </div>
+    </article>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
